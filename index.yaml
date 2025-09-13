@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  space-21:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-09-13T15:36:49.299324+03:00"
+    description: A Helm chart for space-21
+    digest: 560ad34ae5a476d4412a46416af6c917affcb35640b9b59f68e38622963fbaac
+    keywords:
+    - application
+    - web
+    maintainers:
+    - email: garroshm@space-21.ru
+      name: Alexsey Popov
+    name: space-21
+    sources:
+    - https://github.com/s21platform
+    type: application
+    urls:
+    - https://alexseipopov.github.io/k8s-helm/space-21-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-09-13T15:36:49.298121+03:00"
