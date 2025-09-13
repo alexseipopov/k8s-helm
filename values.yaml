@@ -30,3 +30,6 @@ resources: {}
 
 # Pod configuration
 podAnnotations: {}
+
+postgresql:
+  enabled: false
