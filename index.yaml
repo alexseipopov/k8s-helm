@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   space-21:
   - apiVersion: v2
-    appVersion: "1.0"
-    created: "2025-09-13T15:36:49.299324+03:00"
+    appVersion: 1.0.1
+    created: "2025-09-13T17:27:23.333311+03:00"
     description: A Helm chart for space-21
-    digest: 560ad34ae5a476d4412a46416af6c917affcb35640b9b59f68e38622963fbaac
+    digest: 47bc0ba7618a7798a380fce3404baa54a36c9f1027679f0af39b6e6c58177996
     keywords:
     - application
     - web
@@ -19,4 +19,4 @@ entries:
     urls:
     - https://alexseipopov.github.io/k8s-helm/space-21-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-13T15:36:49.298121+03:00"
+generated: "2025-09-13T17:27:23.33166+03:00"
