@@ -1,0 +1,32 @@
+# Default values for space-21.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# Image configuration - override in your service values
+image:
+  repository: nginx
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+# Service configuration
+service:
+  type: ClusterIP
+  port: 80
+
+# Ingress configuration
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  hosts:
+    - host: ""
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+
+# Resources - override in your service values
+resources: {}
+
+# Pod configuration
+podAnnotations: {}
