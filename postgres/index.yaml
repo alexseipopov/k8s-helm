@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  postgres:
+  - apiVersion: v2
+    appVersion: "15"
+    created: "2025-09-13T18:04:23.34197+03:00"
+    description: A Helm chart for PostgreSQL database
+    digest: c896896bd54581439b94c4e86b363b38c8ddf3db46edd4bdbffdd5f355cffbc3
+    keywords:
+    - database
+    - postgresql
+    - sql
+    maintainers:
+    - email: garroshm@space-21.ru
+      name: Alexsey Popov
+    name: postgres
+    sources:
+    - https://github.com/s21platform
+    type: application
+    urls:
+    - https://alexseipopov.github.io/k8s-helm/postgres/postgres-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-09-13T18:04:23.340968+03:00"

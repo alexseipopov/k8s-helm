@@ -3,7 +3,25 @@ entries:
   space-21:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2025-09-13T17:28:43.790234+03:00"
+    created: "2025-09-13T18:04:39.06336+03:00"
+    description: A Helm chart for space-21
+    digest: a4c5f9c5d22e891787309bf986b0589f93049cbc74439d5017fd2838835487d7
+    keywords:
+    - application
+    - web
+    maintainers:
+    - email: garroshm@space-21.ru
+      name: Alexsey Popov
+    name: space-21
+    sources:
+    - https://github.com/s21platform
+    type: application
+    urls:
+    - https://alexseipopov.github.io/k8s-helm/service/space-21-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-09-13T18:04:39.061667+03:00"
     description: A Helm chart for space-21
     digest: 268d18a401487373bda10731bad64a523ae229d96a29027913213c7221fce64f
     keywords:
@@ -17,11 +35,11 @@ entries:
     - https://github.com/s21platform
     type: application
     urls:
-    - https://alexseipopov.github.io/k8s-helm/space-21-0.1.1.tgz
+    - https://alexseipopov.github.io/k8s-helm/service/space-21-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2025-09-13T17:28:43.789114+03:00"
+    created: "2025-09-13T18:04:39.06015+03:00"
     description: A Helm chart for space-21
     digest: 47bc0ba7618a7798a380fce3404baa54a36c9f1027679f0af39b6e6c58177996
     keywords:
@@ -35,6 +53,6 @@ entries:
     - https://github.com/s21platform
     type: application
     urls:
-    - https://alexseipopov.github.io/k8s-helm/space-21-0.1.0.tgz
+    - https://alexseipopov.github.io/k8s-helm/service/space-21-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-13T17:28:43.786929+03:00"
+generated: "2025-09-13T18:04:39.058214+03:00"

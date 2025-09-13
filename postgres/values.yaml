@@ -1,0 +1,53 @@
+# Default values for postgres.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# PostgreSQL image configuration
+image:
+  repository: postgres
+  tag: "15"
+  pullPolicy: IfNotPresent
+
+# Database configuration
+postgresql:
+  # Database name
+  database: "app"
+  # Username for the database
+  username: "postgres"
+  # Password for the database (will be generated if not set)
+  password: ""
+  # Port for PostgreSQL
+  port: 5432
+
+# Persistent storage
+persistence:
+  enabled: true
+  # Storage class for PVC
+  storageClass: ""
+  # Size of the volume
+  size: 10Gi
+  # Access mode
+  accessMode: ReadWriteOnce
+
+# Service configuration
+service:
+  type: ClusterIP
+  port: 5432
+
+# Resources
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "250m"
+  limits:
+    memory: "1Gi"
+    cpu: "500m"
+
+# Pod configuration
+podAnnotations: {}
+
+# Security context
+securityContext:
+  runAsUser: 999
+  runAsGroup: 999
+  fsGroup: 999

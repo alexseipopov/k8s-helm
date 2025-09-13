@@ -1,0 +1,20 @@
+1. PostgreSQL has been deployed!
+
+2. Get your application's database connection by running these commands:
+
+   export POSTGRES_PASSWORD=$(kubectl get secret --namespace {{ .Release.Namespace }} {{ include "postgres.fullname" . }} -o jsonpath="{.data.postgres-password}" | base64 -d)
+   export POSTGRES_USER=$(kubectl get secret --namespace {{ .Release.Namespace }} {{ include "postgres.fullname" . }} -o jsonpath="{.data.postgres-user}" | base64 -d)
+   export POSTGRES_DB=$(kubectl get secret --namespace {{ .Release.Namespace }} {{ include "postgres.fullname" . }} -o jsonpath="{.data.postgres-db}" | base64 -d)
+
+   echo "Username: $POSTGRES_USER"
+   echo "Password: $POSTGRES_PASSWORD"
+   echo "Database: $POSTGRES_DB"
+
+3. To connect to your database:
+
+   # Run a postgres pod and connect using the psql client:
+   kubectl run {{ include "postgres.fullname" . }}-client --rm --tty -i --restart='Never' --namespace {{ .Release.Namespace }} --image postgres:15 --env="PGPASSWORD=$POSTGRES_PASSWORD" --command -- psql --host {{ include "postgres.fullname" . }} -U $POSTGRES_USER -d $POSTGRES_DB -p {{ .Values.service.port }}
+
+4. To port-forward the database to your local machine:
+
+   kubectl port-forward --namespace {{ .Release.Namespace }} svc/{{ include "postgres.fullname" . }} {{ .Values.service.port }}:{{ .Values.service.port }}
