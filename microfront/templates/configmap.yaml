@@ -1,0 +1,11 @@
+{{- if .Values.nginxConfig.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "microfrontend.fullname" . }}-nginx
+  labels:
+    {{- include "microfrontend.labels" . | nindent 4 }}
+data:
+  default.conf: |
+{{ .Values.nginxConfig.config | indent 4 }}
+{{- end }}

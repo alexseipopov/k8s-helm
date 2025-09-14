@@ -1,0 +1,16 @@
+apiVersion: v2
+name: microfrontend
+description: A Helm chart for React microfrontends with Nginx
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - microfrontend
+  - react
+  - nginx
+home: https://github.com/your-org/admin-microfront-agregator
+sources:
+  - https://github.com/your-org/admin-microfront-agregator
+maintainers:
+  - name: asepopov
+    email: your-email@example.com
